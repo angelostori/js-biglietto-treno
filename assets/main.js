@@ -40,4 +40,12 @@ if (user_age < 18) {
     //applico lo sconto
     let ticket_price = init_ticket_price - discount_20
     document.writeln('Prezzo biglietto: ' + ticket_price + '€')
+} else if (user_age >= 65) {
+    //calcolo il quaranta percento di sconto
+    const discount_40 = (init_ticket_price * 4) / 10
+    //applico lo sconto
+    let ticket_price = init_ticket_price - discount_40
+    document.writeln('Prezzo biglietto: ' + ticket_price + '€')
+} else {
+    
 }
