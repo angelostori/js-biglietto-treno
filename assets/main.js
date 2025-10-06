@@ -47,5 +47,6 @@ if (user_age < 18) {
     let ticket_price = init_ticket_price - discount_40
     document.writeln('Prezzo biglietto: ' + ticket_price + '€')
 } else {
-    
+    //prezzo normale senza sconti
+    document.writeln('Prezzo biglietto: ' + init_ticket_price + '€')
 }
