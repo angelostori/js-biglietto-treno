@@ -21,3 +21,16 @@ PRO TIP:
 prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usare per svolgere la 
 consegna e scoponi  il problema di sotto-task da svolgere. Questo ti aiuta a documentare il tuo flusso 
 di lavoro ed il codice evitandoti di restare li a fissare una pagina vuota.*/
+
+/*
+    tools:
+    
+*/
+
+//definire una variabile per raccogliere l'età dell'utente
+//definire una variabile per raccogliere la quantità di km che l'utente vuole percorrere
+
+/*calcolare il prezzo totale del viaggio*/
+//calcolare prezzo biglietto (quantità di km che l'utente vuole percorrere * 0.21)
+    //fare in modo che il prezzo si presenti con due cifre decimali
+//applicare eventuali sconti in base all'età dell'utente
