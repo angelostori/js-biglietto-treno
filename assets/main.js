@@ -26,11 +26,17 @@ di lavoro ed il codice evitandoti di restare li a fissare una pagina vuota.*/
 
 let user_age = Number(prompt('Digitare l\'età del passegero'))
 document.writeln('Età: ' + user_age)
+//prendo tramite id del tag p quel paragrafo e lo valorizzo con il valore di una variabile
+document.getElementById("eta").textContent = user_age;
+
 
 //definire una variabile per raccogliere la quantità di km che l'utente vuole percorrere
 
 let user_distance = Number(prompt('Digitare la quantità di Km da percorrere'))
 document.writeln('Distanza: ' + user_distance + 'Km')
+//prendo tramite id del tag p quel paragrafo e lo valorizzo con il valore di una variabile
+document.getElementById("distanza").textContent = user_distance
+
 
 /*calcolare il prezzo totale del viaggio*/
 //calcolare prezzo biglietto (quantità di km che l'utente vuole percorrere * 0.21)
@@ -44,14 +50,20 @@ if (user_age < 18) {
     //applico lo sconto
     let ticket_price = init_ticket_price - discount_20
     document.writeln('Prezzo biglietto: ' + ticket_price.toFixed(2) + '€')
+    //prendo tramite id del tag p quel paragrafo e lo valorizzo con il valore di una variabile
+    document.getElementById("prezzo").textContent = ticket_price.toFixed(2)
 } else if (user_age >= 65) {
     //calcolo il quaranta percento di sconto
     const discount_40 = init_ticket_price * 40 / 100
     //applico lo sconto
     let ticket_price = init_ticket_price - discount_40
     document.writeln('Prezzo biglietto: ' + ticket_price.toFixed(2) + '€')
+    //prendo tramite id del tag p quel paragrafo e lo valorizzo con il valore di una variabile
+    document.getElementById("prezzo").textContent = ticket_price.toFixed(2)
 } else {
     //prezzo normale senza sconti
     document.writeln('Prezzo biglietto: ' + init_ticket_price.toFixed(2) + '€')
+    //prendo tramite id del tag p quel paragrafo e lo valorizzo con il valore di una variabile
+    document.getElementById("prezzo").textContent = init_ticket_price.toFixed(2)
 }
 
