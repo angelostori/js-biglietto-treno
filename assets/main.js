@@ -31,4 +31,7 @@ document.writeln('Distanza: ' + user_distance + 'Km')
 /*calcolare il prezzo totale del viaggio*/
 //calcolare prezzo biglietto (quantità di km che l'utente vuole percorrere * 0.21)
     //fare in modo che il prezzo si presenti con due cifre decimali
+let ticket_price = (user_distance * 0.21).toFixed(2).valueOf()
+
+document.writeln('Prezzo biglietto: ' + ticket_price + '€')
 //applicare eventuali sconti in base all'età dell'utente
