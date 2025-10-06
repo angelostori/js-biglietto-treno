@@ -22,12 +22,8 @@ prima di iniziare a scrivere codice, inizia con l'elencare gli strumenti da usar
 consegna e scoponi  il problema di sotto-task da svolgere. Questo ti aiuta a documentare il tuo flusso 
 di lavoro ed il codice evitandoti di restare li a fissare una pagina vuota.*/
 
-/*
-    tools:
-    
-*/
-
 //definire una variabile per raccogliere l'età dell'utente
+let user_age = Number(prompt('Digitare l\'età del passegero'))
 //definire una variabile per raccogliere la quantità di km che l'utente vuole percorrere
 
 /*calcolare il prezzo totale del viaggio*/
