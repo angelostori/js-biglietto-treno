@@ -23,11 +23,15 @@ consegna e scoponi  il problema di sotto-task da svolgere. Questo ti aiuta a doc
 di lavoro ed il codice evitandoti di restare li a fissare una pagina vuota.*/
 
 //definire una variabile per raccogliere l'età dell'utente
+
 let user_age = Number(prompt('Digitare l\'età del passegero'))
 document.writeln('Età: ' + user_age)
+
 //definire una variabile per raccogliere la quantità di km che l'utente vuole percorrere
+
 let user_distance = Number(prompt('Digitare la quantità di Km da percorrere'))
 document.writeln('Distanza: ' + user_distance + 'Km')
+
 /*calcolare il prezzo totale del viaggio*/
 //calcolare prezzo biglietto (quantità di km che l'utente vuole percorrere * 0.21)
 //fare in modo che il prezzo si presenti con due cifre decimali
@@ -50,3 +54,8 @@ if (user_age < 18) {
     //prezzo normale senza sconti
     document.writeln('Prezzo biglietto: ' + init_ticket_price.toFixed(2) + '€')
 }
+
+document.getElementById('result').innerHTML =
+    `Età passeggero: ${userAge} anni<br>
+    Distanza: ${userDistance} km<br>
+    Prezzo biglietto: <strong>${formattedPrice} €</strong>;`
