@@ -55,7 +55,3 @@ if (user_age < 18) {
     document.writeln('Prezzo biglietto: ' + init_ticket_price.toFixed(2) + '€')
 }
 
-document.getElementById('result').innerHTML =
-    `Età passeggero: ${userAge} anni<br>
-    Distanza: ${userDistance} km<br>
-    Prezzo biglietto: <strong>${formattedPrice} €</strong>;`
