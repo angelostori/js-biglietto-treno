@@ -30,8 +30,14 @@ let user_distance = Number(prompt('Digitare la quantità di Km da percorrere'))
 document.writeln('Distanza: ' + user_distance + 'Km')
 /*calcolare il prezzo totale del viaggio*/
 //calcolare prezzo biglietto (quantità di km che l'utente vuole percorrere * 0.21)
-    //fare in modo che il prezzo si presenti con due cifre decimali
-let ticket_price = (user_distance * 0.21).toFixed(2).valueOf()
-
-document.writeln('Prezzo biglietto: ' + ticket_price + '€')
+//fare in modo che il prezzo si presenti con due cifre decimali
+//definisco il prezzo iniziale
+let init_ticket_price = (user_distance * 0.21).toFixed(2).valueOf()
 //applicare eventuali sconti in base all'età dell'utente
+if (user_age < 18) {
+    //calcolo il venti percento di sconto
+    const discount_20 = (init_ticket_price * 2) / 10
+    //applico lo sconto
+    let ticket_price = init_ticket_price - discount_20
+    document.writeln('Prezzo biglietto: ' + ticket_price + '€')
+}
