@@ -32,21 +32,21 @@ document.writeln('Distanza: ' + user_distance + 'Km')
 //calcolare prezzo biglietto (quantità di km che l'utente vuole percorrere * 0.21)
 //fare in modo che il prezzo si presenti con due cifre decimali
 //definisco il prezzo iniziale
-let init_ticket_price = (user_distance * 0.21).toFixed(2).valueOf()
+let init_ticket_price = parseFloat((user_distance * 0.21).toFixed(2))
 //applicare eventuali sconti in base all'età dell'utente
 if (user_age < 18) {
     //calcolo il venti percento di sconto
-    const discount_20 = (init_ticket_price * 2) / 10
+    const discount_20 = init_ticket_price * 20 / 100
     //applico lo sconto
     let ticket_price = init_ticket_price - discount_20
-    document.writeln('Prezzo biglietto: ' + ticket_price + '€')
+    document.writeln('Prezzo biglietto: ' + ticket_price.toFixed(2) + '€')
 } else if (user_age >= 65) {
     //calcolo il quaranta percento di sconto
-    const discount_40 = (init_ticket_price * 4) / 10
+    const discount_40 = init_ticket_price * 40 / 100
     //applico lo sconto
     let ticket_price = init_ticket_price - discount_40
-    document.writeln('Prezzo biglietto: ' + ticket_price + '€')
+    document.writeln('Prezzo biglietto: ' + ticket_price.toFixed(2) + '€')
 } else {
     //prezzo normale senza sconti
-    document.writeln('Prezzo biglietto: ' + init_ticket_price + '€')
+    document.writeln('Prezzo biglietto: ' + init_ticket_price.toFixed(2) + '€')
 }
